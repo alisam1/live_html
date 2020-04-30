@@ -1,0 +1,264 @@
+.header
+{
+    width: 80%;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.header-left
+{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.header-left__title
+{
+    font-family: $font-family;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.2;
+    margin-left: 5px;
+}
+
+.header-right
+{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-right__top, .header-right__bottom
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right__top
+{
+    border-bottom: 1px solid #d7d7d7;
+}
+
+
+.header-right__list
+{ 
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-start;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;;
+}
+
+
+.header-right___item
+{
+    padding-right: 20px;
+}
+
+.header-right___item a
+{ 
+    font-family: $font-family;
+    font-size: 12px;
+    color: #252525;
+    text-decoration: none;
+}
+
+.header-right___item a:hover
+{
+    border-bottom: 1px solid #252525;
+}
+
+.header-right___item a:active
+{
+    border-bottom: 1px solid #252525;
+}
+
+
+.header-right__registration
+{ 
+    height: 35px;
+    display: flex;
+    flex-direction: row; 
+    align-items: baseline;
+    margin-top: 0;;
+}
+
+.header-right__login a
+{
+    font-family: $font-family;
+    font-size: 12px;
+    color: #252525;
+    text-decoration: none;
+}
+
+.header-right__login
+{
+    position: relative;
+    padding-right: 23px;
+}
+
+.header-right__login::after
+{
+    content: "|";
+    position: absolute;
+    color: #252525;
+    width: 1px;
+    height: 19px;
+    left: 38px;
+    top: 2px;
+}
+
+.header-right__reg a
+{
+    font-family: $font-family;
+    font-size: 12px;
+    color: #252525;
+    text-decoration: none;
+}
+
+.header-right__picture
+{
+    display: flex;
+    flex-direction: row; 
+}
+
+.header-right__basket, .header-right__favorite, .header-right__compare
+{
+    font-family: $font-family;
+    font-size: 14px;
+    color: #252525;
+    position: relative;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.header-right__basket::before
+{
+    content: "";
+    position: absolute;
+    background-image: url("../img/Basket_icon.svg");
+    width: 19px;
+    height: 18px;
+    left: -30px;
+    bottom: 0px;
+
+}
+
+.header-right__favorite::before
+{
+    content: "";
+    position: absolute;
+    background-image: url("../img/Star_icon.svg");
+    width: 16px;
+    height: 16px;
+    left: -27px;
+
+}
+
+.header-right__compare::before
+{
+    content: "";
+    position: absolute;
+    background-image: url("../img/Balance_icon.svg");
+    width: 18px;
+    height: 16px;
+    left: -27px;
+
+}
+
+.header-right__product
+{
+    width: 72px;
+    height: 72px;
+    border: 1px solid #d7d7d7;
+    margin-right: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right__product img
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right__info
+{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-right__phone a
+{
+    font-family: $font-family;
+    font-size: 25px;
+    font-weight: 700;
+    color: #252525;
+    text-decoration: none;
+}
+
+.header-right__work
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: $font-family;
+    font-size: 12px;
+    font-weight: 400;
+    color: #252525;
+}
+
+.header-right__work span
+{
+    font-weight: bold;
+}
+
+.header-right__city
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: $font-family;
+    font-size: 12px;
+    font-weight: 400;
+    color: #252525;
+}
+
+.header-right__city span a
+{
+    font-family: $font-family;
+    font-size: 12px;
+    font-weight: 400;
+    color: #252525;
+    text-transform: lowercase;
+    text-decoration: none;
+    border-bottom: 1px dashed #252525;
+}
+
+.header-right__city span
+{
+    position: relative;
+}
+
+.header-right__city span::before
+{
+    content: "";
+    position: absolute;
+    background-image: url("../img/Arrow_icon.svg");
+    width: 7px;
+    height: 8px;
+    left: -10px;
+    top: 4px;
+}
